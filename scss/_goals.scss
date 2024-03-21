@@ -1,0 +1,59 @@
+.goals {
+    @include container();
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    h1 {
+        margin-bottom: 50px;
+    }
+    
+
+    .goals__grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+            "grid1 grid1 grid2 grid2 grid3 grid3"
+            "grid4 grid4 grid4 grid5 grid5 grid5"
+            "grid6 grid6 grid6 grid6 grid7 grid7"
+        ;
+
+        .goals__grid_item {
+            border-radius: 80px;
+            position: relative;
+
+            h2 {
+                color: $mainBlue;
+            }
+
+            .goals__grid_item-text {
+                position: absolute;
+                bottom: 30px;
+                color: $mainLight;
+
+                h4 {
+                    opacity: .7;
+                }
+            }
+
+
+            
+            @for $i from 1 to 8 {
+                @if $i == 3 or $i == 4 or $i == 7 {
+                    &:nth-child(#{$i}) {
+                        grid-area: grid#{$i};
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                } @else {
+                    &:nth-child(#{$i}) {
+                        grid-area: grid#{$i};
+                        padding: 50px;
+                        border: 1px solid $gray;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.industries {
+    @include container();
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    h1 {
+        margin-bottom: 50px;
+    }
+
+    .industries__grid {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+        .industries__item {
+            color: $mainLight;
+
+            img {
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                margin-bottom: 30px;
+            }
+
+            .line {
+                width: 100%;
+                height: 1px;
+                background-color: $mainLight;
+                margin-bottom: 30px;
+            }
+
+            p {
+                opacity: .7;
+            }
+        }
+    }
+}

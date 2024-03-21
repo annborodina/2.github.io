@@ -1,0 +1,39 @@
+.work {
+    @include container();
+    padding-bottom: 100px;
+
+    h1 {
+        margin-bottom: 60px;
+    }
+
+    .work__grid {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(3, minmax(180px, 1fr));
+        grid-template-rows: repeat(3, 1fr);
+
+        .work__grid-item:not(:first-child) {
+            border: 1px solid rgb(47, 53, 63, 0.5);
+            border-radius: 28px;
+
+            h5 {
+                margin-bottom: 15px;
+            }
+
+            p {
+                opacity: 0.7;
+            }
+        }
+
+        .work__grid-item {
+            padding: 25px;
+
+            &:last-child {
+                background-color: rgb(46,43,208);
+                background-color: linear-gradient(90deg, rgba(46,43,208,1) 0%, rgba(120,118,242,1) 0%);
+                background-image: url('../images/Iimg_BG.png');
+                color: white;
+            }
+        }
+    }
+}

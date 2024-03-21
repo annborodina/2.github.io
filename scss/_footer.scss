@@ -1,0 +1,48 @@
+.footer {
+    border-top: 1px solid $mainLight;
+    padding: 20px;
+
+    .footer__container {
+        @include container();
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .footer__container-item {
+
+            img {
+                margin-bottom: 50px;
+            }
+            
+            p {
+                margin-bottom: 30px;
+                opacity: .7;
+            }
+
+            .email {
+                text-decoration: underline;
+                margin-bottom: 40px;
+            }
+
+            a {
+                color: $mainBlue;
+                display: block;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .footer__bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-top: 1px solid $mainLight;
+        padding: 30px;
+
+        p {
+            opacity: .7;
+        }
+    }
+}

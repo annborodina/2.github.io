@@ -1,0 +1,71 @@
+@font-face {
+    font-family: neueRegular;
+    src: url('../fonts/NeueMachina-Regular.ttf');
+}
+
+@font-face {
+    font-family: neueBold;
+    src: url('../fonts/NeueMachina-Bold.ttf');
+}
+
+@font-face {
+    font-family: gilroyRegular;
+    src: url('../fonts/Gilroy-Regular.ttf');
+}
+
+h1 {
+    font-family: neueRegular;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+h2 {
+    font-family: neueRegular;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+h3 {
+    font-family: neueRegular;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+h5 {
+    font-family: neueRegular;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+h4 {
+    font-family: gilroyRegular;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+h5 {
+    font-size: 26px;
+    line-height: 40px;
+    font-family: neueRegular;
+    font-weight: 400;
+}
+
+p {
+    font-family: gilroyRegular;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+    font-family: neueRegular;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+}
